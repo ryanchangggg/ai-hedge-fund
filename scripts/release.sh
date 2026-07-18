@@ -105,4 +105,4 @@ echo -e "$BODY" | gh release create "$TAG" \
   --notes-file -
 
 echo ""
-echo "Released ${TAG}: https://github.com/virattt/ai-hedge-fund/releases/tag/${TAG}"
+echo "Released ${TAG}: https://github.com/ryanchangggg/ai-hedge-fund/releases/tag/${TAG}"

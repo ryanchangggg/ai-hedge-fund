@@ -30,7 +30,6 @@ This system employs several agents working together:
 
 Note: the system does not actually make any trades.
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/virattt?style=social)](https://twitter.com/virattt)
 
 ## Disclaimer
 
@@ -60,7 +59,7 @@ Before you can run the AI Hedge Fund, you'll need to install it and set up your 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/virattt/ai-hedge-fund.git
+git clone https://github.com/ryanchangggg/ai-hedge-fund.git
 cd ai-hedge-fund
 ```
 
@@ -135,7 +134,7 @@ Note: The `--ollama`, `--start-date`, and `--end-date` flags work for the backte
 
 The new way to run the AI Hedge Fund is through our web application that provides a user-friendly interface. This is recommended for users who prefer visual interfaces over command line tools.
 
-Please see detailed instructions on how to install and run the web application [here](https://github.com/virattt/ai-hedge-fund/tree/main/app).
+Please see detailed instructions on how to install and run the web application [here](https://github.com/ryanchangggg/ai-hedge-fund/tree/main/app).
 
 <img width="1721" alt="Screenshot 2025-06-28 at 6 41 03 PM" src="https://github.com/user-attachments/assets/b95ab696-c9f4-416c-9ad1-51feb1f5374b" />
 
@@ -152,7 +151,7 @@ Please see detailed instructions on how to install and run the web application [
 
 ## Feature Requests
 
-If you have a feature request, please open an [issue](https://github.com/virattt/ai-hedge-fund/issues) and make sure it is tagged with `enhancement`.
+If you have a feature request, please open an [issue](https://github.com/ryanchangggg/ai-hedge-fund/issues) and make sure it is tagged with `enhancement`.
 
 ## License
 

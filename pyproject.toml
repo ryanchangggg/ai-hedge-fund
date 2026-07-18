@@ -2,7 +2,7 @@
 name = "ai-hedge-fund"
 version = "2.0.0"
 description = "An AI-powered hedge fund that uses multiple agents to make trading decisions"
-authors = ["Your Name <your.email@example.com>"]
+ authors = ["Ryan Chang <ryan@ryanchangggg.dev>"]
 readme = "README.md"
 packages = [
     { include = "src", from = "." },

@@ -86,7 +86,7 @@ If you prefer to set up each component manually or need more control:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/virattt/ai-hedge-fund.git
+git clone https://github.com/ryanchangggg/ai-hedge-fund.git
 cd ai-hedge-fund
 ```
 
@@ -227,5 +227,4 @@ If ports 8000 or 5173 are in use:
 - **Or use different ports** by modifying the scripts
 
 ### Getting Help
-- Check the [GitHub Issues](https://github.com/virattt/ai-hedge-fund/issues)
-- Follow updates on [Twitter](https://x.com/virattt) 
+- Check the [GitHub Issues](https://github.com/ryanchangggg/ai-hedge-fund/issues)

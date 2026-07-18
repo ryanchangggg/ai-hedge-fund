@@ -237,9 +237,18 @@ def get_financial_metrics(
         "asset_turnover": info.get("assetTurnover"),
         "inventory_turnover": info.get("inventoryTurnover"),
         "receivables_turnover": info.get("receivablesTurnover"),
+        "free_cash_flow_per_share": info.get("freeCashflowPerShare"),
+        "free_cash_flow_growth": None,
+        "book_value_growth": None,
+        "operating_income_growth": None,
+        "ebitda_growth": None,
+        "days_sales_outstanding": None,
+        "operating_cycle": None,
+        "working_capital_turnover": None,
+        "operating_cash_flow_ratio": None,
     }
-
-    metric = FinancialMetrics(**{k: v for k, v in kw.items() if v is not None})
+    
+    metric = FinancialMetrics(**kw)
     result = [metric]
     _cache.set_financial_metrics(cache_key, [m.model_dump() for m in result])
     return result
@@ -319,11 +328,14 @@ def _build_annual_line_items(stock, explicit_fields, ticker, end_date, limit):
                     raw = stmt.loc[label, period_date]
                     val = float(raw) if pd.notna(raw) else None
                     break
-            if val is not None:
-                data[field] = val
+            data[field] = val
 
         # Compute derived fields
         data.update(_compute_derived(data))
+        # Ensure all requested fields are present (even None) so agents can access them safely
+        for field in all_needed | set(_DERIVED_FIELDS) | {"outstanding_shares"}:
+            if field not in data:
+                data[field] = None
 
         results.append(LineItem(**data))
 
@@ -366,6 +378,10 @@ def _build_ttm_line_item(stock, explicit_fields, ticker, end_date):
                     data[field] = float(raw) if pd.notna(raw) else None
 
     data.update(_compute_derived(data))
+    # Ensure all requested fields are present (even if None) so agents can safely access them
+    for field in all_needed | set(_DERIVED_FIELDS):
+        if field not in data:
+            data[field] = None
     return [LineItem(**data)] if any(k not in ("ticker", "report_period", "period", "currency") for k in data) else []
 
 

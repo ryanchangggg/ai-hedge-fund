@@ -27,7 +27,6 @@ This system employs several agents working together:
 
 Note: the system does not actually make any trades.
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/virattt?style=social)](https://twitter.com/virattt)
 
 ## Disclaimer
 
@@ -57,7 +56,7 @@ Before you can run the AI Hedge Fund, you'll need to install it and set up your 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/virattt/ai-hedge-fund.git
+git clone https://github.com/ryanchangggg/ai-hedge-fund.git
 cd ai-hedge-fund
 ```
 
@@ -203,7 +202,7 @@ run.bat --ticker AAPL,MSFT,NVDA --ollama backtest
 
 ## Feature Requests
 
-If you have a feature request, please open an [issue](https://github.com/virattt/ai-hedge-fund/issues) and make sure it is tagged with `enhancement`.
+If you have a feature request, please open an [issue](https://github.com/ryanchangggg/ai-hedge-fund/issues) and make sure it is tagged with `enhancement`.
 
 ## License
 
